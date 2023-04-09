@@ -1,0 +1,44 @@
+Respiration Rate (breaths per minute)
+Limb Movement (movements per minute)
+Blood Oxygen (percentage)
+Sleeping Hours (hours)
+Heart Rate (beats per minute)
+
+
+Test_Data:
+----------
+Stress Level 0:
+17.24 
+6.49 
+96.24
+8.24
+53.12
+
+Stress Level 1:
+19.37
+9.37
+94.06
+6.37
+58.44
+
+Stress Level 2:
+21.34
+11.34
+91.34
+4.01
+63.36
+
+Stress Level 3:
+24.08
+14.6
+89.04
+1.04
+70.2
+
+Stress Level 4:
+26.28
+17.14
+82.43
+0
+75.72
+

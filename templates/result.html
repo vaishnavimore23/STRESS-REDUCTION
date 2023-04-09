@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stress Level Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+            /* Add path to your background image */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        p {
+            text-align: center;
+            font-size: 24px;
+            color: #007bff;
+            margin-top: 30px;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            list-style-type: disc;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 30px auto 0;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stress Level Prediction</h1>
+    <br><br><br>
+    <p>The predicted stress level is: {{ stress_level }}</p>
+    <p color="black">Here are some suggestions: <br><br>{{ assistant_reply }}</p>
+
+
+    {% comment %} <div>
+        {% if stress_level == 0 %}
+            <h2>Stress Level 0 (No Stress)</h2>
+            <h3>Follow below steps to reduce your stress level:</h3>
+            <ul>
+                <li>Mindful Breathing: Take a few moments to focus on your breath, inhaling deeply and exhaling slowly. This can help calm your nervous system and promote relaxation.</li>
+                <li>Light Exercise: Go for a short walk, do some gentle stretching, or engage in a low-intensity physical activity to release endorphins and boost your mood.</li>
+                <li>Listen to Music: Put on your favorite soothing tunes or nature sounds to help you relax and unwind.</li>
+                <li>Practice Gratitude: Write down three things you are grateful for or reflect on positive aspects of your life to shift your focus from stress to gratitude.</li>
+            </ul>
+        {% elif stress_level == 1 %}
+            <h2>Stress Level 1 (Mild Stress):</h2>
+            <h3>Follow below steps to reduce your stress level:</h3>
+            <ul>
+                <li>Progressive Muscle Relaxation: Tense and relax different muscle groups in your body to release tension and stress. Start from your toes and work your way up to your head.</li>
+                <li>Guided Imagery: Close your eyes and visualize a calming scene, such as a beach or a forest, to help your mind relax.</li>
+                <li>Social Support: Talk to a trusted friend or family member about your stressors and concerns. Sometimes, sharing can help you gain perspective and feel supported.</li>
+                <li>Practice Self-Care: Take care of yourself by engaging in activities you enjoy, such as reading a book, taking a bath, or practicing hobbies, to recharge and rejuvenate.</li>
+            </ul>
+        {% elif stress_level == 2 %}
+            <h2>Stress Level 2 (Moderate Stress):</h2>
+            <h3>Follow below steps to reduce your stress level:</h3>
+            <ul>
+                <li>Deep Breathing: Practice slow, deep breaths to activate your body's relaxation response and reduce stress.</li>
+                <li>Journaling: Write down your thoughts, feelings, and worries in a journal to help you process and organize your emotions.</li>
+                <li>Time Management: Make a to-do list and prioritize tasks to help you feel more in control and reduce overwhelm.</li>
+                <li>Exercise: Engage in moderate-intensity exercise, such as jogging or cycling, to release tension and boost endorphins.</li>
+            </ul>
+        {% elif stress_level == 3 %}
+            <h2>Stress Level 3 (High Stress):</h2>
+            <h3>Follow below steps to reduce your stress level:</h3>
+            <ul>
+                <li>Meditation: Practice mindfulness meditation or other relaxation techniques, such as body scan meditation or loving-kindness meditation, to calm your mind and body.</li>
+                <li>Professional Help: Consider seeking support from a therapist or counselor to help you manage and cope with high levels of stress.</li>
+                <li>Set Boundaries: Learn to say no and set healthy boundaries to prevent overwhelm and reduce stressors in your life.</li>
+                <li>Disconnect from Technology: Take a break from screens and disconnect from technology for a while to allow your mind to rest and rejuvenate.</li>
+            </ul>
+        {% elif stress_level == 4 %}
+            <h2>Stress Level 4 (Very High Stress):</h2>
+            <h3>Follow below steps to reduce your stress level:</h3>
+            <ul>
+                <li>Crisis Support: Reach out to a mental health professional or a crisis helpline for immediate support and guidance.</li>
+                <li>Take a Break: Allow yourself to take a break from your stressors, even if it's just for a short period of time, to prioritize self-care and self-compassion.</li>
+                <li>Seek Social Support: Lean on trusted friends, family members, or a support group for emotional support and understanding.</li>
+                <li>Prioritize Self-Care: Make self-care a priority and engage in activities that bring you joy, relaxation, and comfort.</li>
+            </ul>
+        {% endif %}
+        </div> {% endcomment %}
+</body>
+</html>
